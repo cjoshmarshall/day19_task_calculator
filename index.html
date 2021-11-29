@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div>
+        <form id="calcform">
+            <div class="row1">
+                <input class="inputbox" type="text" id="text1" placeholder="0">  
+            </div><br> 
+
+            <div class="row2">
+                <input class="allclear"  type="button" onclick="allclr()" value="AC" id="allclear">
+                <input class="clear" type="button" onclick="slice()" value="C" id="clear">
+                <input class="arithmetic" type="button" onclick="calc(mulbtn.value)" value="*" id="mulbtn"> 
+            </div>
+
+            <div class="row3">
+                <input class="number" type="button" onclick="calc(btn7.value)" value="7" id="btn7">
+                <input class="number" type="button" onclick="calc(btn8.value)" value="8" id="btn8">
+                <input class="number" type="button" onclick="calc(btn9.value)" value="9" id="btn9">
+                <input class="arithmetic" type="button" onclick="calc(divbtn.value)" value="/" id="divbtn">
+            </div>  
+
+            <div class="row4">                                                         
+                <input class="number" type="button" onclick="calc(btn4.value)" value="4" id="btn4">
+                <input class="number" type="button" onclick="calc(btn5.value)" value="5" id="btn5">
+                <input class="number" type="button" onclick="calc(btn6.value)" value="6" id="btn6">
+                <input class="arithmetic" type="button" onclick="calc(subbtn.value)" value="-" id="subbtn">
+            </div>   
+
+            <div class="row5">                                                                        
+                <input class="number" type="button" onclick="calc(btn1.value)" value="1" id="btn1">
+                <input class="number" type="button" onclick="calc(btn2.value)" value="2" id="btn2">
+                <input class="number" type="button" onclick="calc(btn3.value)" value="3" id="btn3">
+                <input class="arithmetic" type="button" onclick="calc(addbtn.value)" value="+" id="addbtn">
+            </div>  
+                  
+            <div class="row6">
+                <input class="arithmetic" type="button" onclick="percent()" value="%" id="centbtn">
+                <input class="number" type="button" onclick="calc(btn0.value)" value="0" id="btn0">
+                <input class="dotequal" type="button" onclick="calc(dotbtn.value)" value="." id="dotbtn">
+                <input class="number" type="button" onclick="equal()" value="=" id="eqlbtn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
